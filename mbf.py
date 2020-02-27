@@ -131,7 +131,7 @@ ________________________________________________________
 						
 				sys.stdout.write(
 					"\r\033[1;96m[*] \033[0m[\033[1;91m{0}\033[0m] Getting id ".format(
-						len(self.id), id[0]
+						len(self.id)
 				)) ; sys.stdout.flush()
 			
 		if ("Lihat selengkapnya" in str(bs)):
