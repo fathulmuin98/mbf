@@ -47,7 +47,7 @@ def bahasa(self, ua, cookie):
 		).text
 		bs = BeautifulSoup(content, "html.parser")
 		for i in bs.findAll("a"):
-			if ("Bahasa Indonesia" in str(i.text.encode("utf+8"))):
+			if ("Bahasa Indonesia" in str(i.text.encode("utf-8"))):
 				session.request(
 					"GET", "https://mbasic.facebook.com"+i["href"],
 						headers = ua, cookies = cookie
