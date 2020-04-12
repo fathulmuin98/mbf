@@ -159,6 +159,17 @@ ________________________________________________________
 				users[1]+"1234",
 				users[2]+"123",
 				users[2]+"1234",
+				users[3]+"1234",
+				users[3]+"12345",
+				users[4]+"12345",
+				users[4]+"123456",
+				users[5]+"123456",
+				users[5]+"1234567",
+				users[6]+"1234567",
+				users[6]+"12345678",
+				users[7]+"123456789",
+				users[7]+"1234567890",
+			
 			]
 		elif (len(users) == 4):
 			pasw = [
@@ -171,11 +182,11 @@ ________________________________________________________
 			]
 		else:
 			pasw = [
-				'sayang', 'sayang123',
-				'bangsat','bangsat123',
-				'doraemon', 'doraemon123',
-				'kontol', 'kontol123',
-				'indonesia', 'indonesia123',
+				'sayang', 'sayangku',
+				'ILOVEYOU','ILoveYou',
+				'iloveyou', 'cintaku',
+				'munafik', 'mylove',
+				'mylove123', 'cintaku',
 			]
 		return pasw
 	
