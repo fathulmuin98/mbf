@@ -186,7 +186,10 @@ ________________________________________________________
 				'ILOVEYOU','ILoveYou',
 				'iloveyou', 'cintaku',
 				'munafik', 'mylove',
-				'mylove123', 'cintaku',
+				'mylove123', 'cintaku','Cintaku','CINTAKU',
+'SINGAPORE','singapore',
+
+
 			]
 		return pasw
 	
