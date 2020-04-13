@@ -227,11 +227,13 @@ ________________________________________________________
 		else:
 			pasw = [
 				'sayang', 'sayangku',
-				'sayang123','sayangku123','cintaku','cintaku123',
+				'sayang123','sayangku123',
+'cintaku','cintaku123',
 				'ILOVEYOU','ILoveYou',
-				'love123','LOVE123','1234567890','123456789','
-				12345678','1234567','123456','12345,112233','ANJING','
-				KONTOL','MEMEK','anjing','kontol','memek',
+				'love123','LOVE123','1234567890','123456789',
+'12345678','1234567','123456','12345,112233','ANJING',
+'KONTOL','MEMEK','anjing',
+'kontol','memek',
 				
 				'iloveyou', 'cintaku',
 				'munafik', 'mylove',
